@@ -1,0 +1,163 @@
+html{box-sizing: border-box; overflow-x: hidden;}
+*{
+    margin:0;
+    padding:0;
+    color:rgb(71, 71, 71);
+    font-family: 'Segoe UI';
+    font-size: 16px;
+}
+a{ color:rgb(18, 134, 96)}
+h1, h2, h3{ color:palevioletred;}
+h1{ text-align: center; font-size:x-large;}
+h2{margin: 4px 6px; font-size:20px;font-weight: 600;}
+h3{margin: 4px 6px; font-size:18px;font-weight: 500;}
+
+
+.container-header{
+    width:100%;
+    background-image: url(/icecream_shop/img/header/header.png);
+    background-size: 100% 100%;
+    border-radius: 5px;
+}
+.logo{ display: flex; margin-bottom: 25px; height: 40px;}
+.logo .logo-div1{ margin: 3px 8px;}
+.logo .logo-div3{ margin-left: 8px;}
+.logo #img1{ margin: 5px 8px; }
+.logo #img2{ margin-top: -10px; }
+@media(max-width:750px) {#img4 {display: none;}}
+[class*="col-"] {
+    float: left;
+}
+@media only screen and (min-width: 400px){
+    .col-s-1{width:8.33%;}
+    .col-s-2{width:16.66%;}
+    .col-s-3{width:25%;}
+    .col-s-4{width:33.33%;}
+    .col-s-5{width:41.66%;}
+    .col-s-6{width:50%;}
+    .col-s-7{width:58.33%;}
+    .col-s-8{width:66.66%;}
+    .col-s-9{width:75%;}
+    .col-s-10{width:83.33%;}
+    .col-s-11{width:91.66%;}
+    .col-s-10{width:100%;}
+}
+@media only screen and (min-width: 768px){
+    .col-1{width:8.33%;}
+    .col-2{width:16.66%;}
+    .col-3{width:25%;}
+    .col-4{width:33.33%;}
+    .col-5{width:41.66%;}
+    .col-6{width:50%;}
+    .col-7{width:58.33%;}
+    .col-8{width:66.66%;}
+    .col-9{width:75%;}
+    .col-10{width:83.33%;}
+    .col-11{width:91.66%;}
+    .col-10{width:100%;}
+}
+
+.container-menu{ display: flex; justify-content: space-between; padding-left: 5px; padding-bottom: 5px;}
+.nav-bar{ display: flex;}
+.nav-bar, .others{list-style: none;}
+.nav-items a{
+    color:palevioletred;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    padding: 3px 8px;
+    margin: 4px;
+    border:1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 3px rgba(0,0,0,0.2);
+}
+.nav-items a:hover{
+    color:rgb(155, 0, 90);
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(116, 0, 116);
+    font-weight:bolder;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 3px rgba(0,0,0,0.4);
+}
+@media(max-width:470px) {.nav-item1 {display: none;}}
+@media(max-width:550px) {.nav-item2 {display: none;}}
+@media(max-width:670px) {.nav-item3 {display: none;}}
+@media(max-width:750px) {.nav-item4 {display: none;}}
+@media(max-width:860px) {.nav-item5 {display: none;}}
+@media(max-width:950px) {.nav-item6 {display: none;}}
+@media(max-width:1070px) {.nav-item7 {display: none;}}
+
+.others{
+    margin-right: 10px;
+    display: flex;
+}
+.others input[type = text]{
+    padding:4px;
+    font-size: 17px;
+    border: none;
+}
+.others .search-container button{
+    padding: 5px 10px;
+    margin-right: 5px;
+    background: #8d8d8d;
+    font-size: 17px;
+    border: none;
+    /* cursor: pointer; */
+}
+.others .search-container button i{
+    color:rgb(238, 255, 0);
+}
+.others li a{
+    padding: 7.5px 10px;
+    margin-right: 16px;
+    background: #8d8d8d;
+    font-size: 17px;
+    color:yellow;
+}
+
+.img1-main img{ width:100%; height:auto;}
+.row1-main > .img2{float:left; padding: 3px 10px;}
+.row1-main img{max-width:250px; height: auto; }
+.aside-img2 { margin:0 10px;}
+.new-cake::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.member > h2{padding-bottom: 6px;}
+.row2-main .video1{float:right; padding: 0 10px;}
+.row2-main .video1 video{width: 300px; height: 270px;}
+.row2-main .aside-video1{margin: 0 10px;}
+.member::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.twocol-row3-main{display: flex;}
+.twocol-row3-main .ingre, .steps{
+    margin: 5px 10px;
+    flex:1;
+}
+.twocol-row3-main .ingre ul, .steps ol{
+    padding:20px;
+}
+
+.order{
+    display: flex;
+    padding: 10px 10px;
+}
+.order-items{
+    text-align: center;
+    width: 22%;
+    border: 2px solid pink;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 6px;
+}
+.order-items img{
+    width: 100px;
+    height: auto;
+}
